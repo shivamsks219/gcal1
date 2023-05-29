@@ -11,7 +11,7 @@ from google_auth_oauthlib.flow import Flow
 from googleapiclient.discovery import build
 
 # client_secret_file should be replaced with your client secret file that is generated from google cloud project
-CLIENT_SECRETS_FILE = 'static\\credentials.json'
+CLIENT_SECRETS_FILE = 'static/credentials.json'
 # scopes determine the permission that we require to fetch the data from google calendar
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
