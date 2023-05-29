@@ -24,7 +24,7 @@ class GoogleCalendarInitView(View):
             scopes=SCOPES,
             redirect_uri=request.build_absolute_uri('/rest/v1/calendar/redirect/')
         )
-        auth_url, _ = flow.authorization_url(access_type='offline', prompt='consent')
+        auth_url, _ = flow.authorization_url(prompt='consent')
 
         return HttpResponseRedirect(auth_url)
 
